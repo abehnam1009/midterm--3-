@@ -1,0 +1,91 @@
+/*full html size*/
+html {
+    width: 100%;
+    height: 100vh;
+    background-color:gray;
+}
+/*https://myoctocat.com/build-your-octocat/
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_transform*/
+
+/*background builds in above link
+    the seconds link is about centering a div inside another div
+    so the main div position should relative and children should have position: absolute
+    top and left propertiest, set thge space beetween top and left of the div
+    the transform also is for centering div
+*/
+body {
+    margin: 0px;
+    background-image: url('../images/octocat-1671895788848.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/*all html are in a dive has content class
+    display:flex use to keep all childs side by side
+
+*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*glass card*/
+.card {
+    z-index: 3;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: white 1px solid;
+    padding: 5px;
+    margin: 20px;
+    background-color: #ffffff59;
+}
+
+.card1 {
+    width: 30%;
+    text-align: center;
+}
+
+.card2 {
+    width: 50%;
+    display: flex;
+}
+
+    .card2 img {
+        width: 50%;
+        min-width: 100px;
+    }
+
+#main {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+#notification {
+    color: white;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    color: white;
+    background-color: forestgreen;
+    border: none;
+}
+/*to set size of input to full size*/
+input {
+    width: -webkit-fill-available;
+}
